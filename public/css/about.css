@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: auto;
+    min-height: 100vh; /* Agrega esto para asegurar que el cuerpo tenga al menos la altura de la ventana gráfica (viewport height) */
+    margin: 0;
+    flex-direction: column;}
+  
+  h1 {
+    color: green; /* Título en verde */
+  }
+  
+  h2 {
+    color: green; /* Títulos de miembros del equipo en verde */
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: black; /* Texto en negro */
+    margin-top: 5px;
+  }
+  

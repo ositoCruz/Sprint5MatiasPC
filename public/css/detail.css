@@ -1,0 +1,61 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el contenedor del detalle del producto */
+.articulo-item {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para los botones */
+.buttonDecoration {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.buttonDecoration:nth-child(2) {
+    margin-right: 20px;
+}
+
+/* Estilos para el botón de compra */
+.buttonDecoration.primary {
+    background-color: #2ecc71;
+    color: #fff;
+    border: 2px solid #2ecc71;
+}
+
+.buttonDecoration.primary:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+/* Estilos para los otros botones */
+.buttonDecoration.secondary {
+    background-color: #07b791;
+    color: #fff;
+    border: 2px solid #11fbc4;
+}
+
+.buttonDecoration.secondary:hover {
+    background-color: #6df36d;
+    border-color: #57efd1;
+}

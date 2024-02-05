@@ -1,0 +1,54 @@
+<html>
+  <%- include("partials/head")  %>
+  <link rel="stylesheet" href="/css/login.css">
+    
+<body>
+  <%- include("partials/header")  %>    
+
+<div class="login-container">
+
+<form action="/products" method="POST" enctype="multipart/form-data">
+  <h2>Crear Producto</h2>
+
+  <label for="name">Nombre del Producto:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="descripcion">Descripción:</label><br>
+  <textarea id="descripcion" name="descripcion"></textarea><br><br> 
+
+  <lab el for="precio">Precio:</label><br>
+    <input type="number" id="precio" name="precio" min="0" step="0.01"><br>
+
+    <lab el for="descuento">Descuento:</label><br>
+      <input type="number" id="descuento" name="descuento" min="0" step="0.01"><br>
+ <br>
+
+      <label for="category" class="form-label">Categoría:</label>
+								<select name="category" id="category" class="form-input">
+									<option value="in-sale">En oferta</option>
+									<option value="visited">Últimos agregados</option>
+								</select>
+  <br><br>
+ <label for="image" class="form-label">Imagen del producto:</label>
+ <input type="file" id="image" name="image" /><br>
+
+
+  <label for="tipo">tipo de Producto:</label>
+  <select name="tipo">
+  <option value="herbicida">Herbicida</option>
+  <option value="abono">Abono</option>
+  <option value="fertilizante">Fertilizante</option>
+  <option value="insecticida">Insecticida</option>
+  <option value="solucion">Solucion</option>
+            </select><br><br>
+
+
+ 
+
+  
+
+  <input class="buttonDecoration" type="submit" value="Crear Producto">
+</form>
+</div>
+</body>
+<%- include("partials/footer")  %>

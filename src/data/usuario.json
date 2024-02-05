@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "firstName": "Juan",
+      "lastName": "García",
+      "email": "juang@email.com",
+      "password": "contraseña123",
+      "category": "Cliente",
+      "image": "imagen1.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "María",
+      "lastName": "López",
+      "email": "marial@email.com",
+      "password": "abc123",
+      "category": "Cliente",
+      "image": "imagen2.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Carlos",
+      "lastName": "Martínez",
+      "email": "carlosm@email.com",
+      "password": "claveSegura",
+      "category": "Empleado",
+      "image": "imagen3.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Laura",
+      "lastName": "Sánchez",
+      "email": "lauras@email.com",
+      "password": "miContraseña",
+      "category": "Cliente",
+      "image": "imagen4.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Pedro",
+      "lastName": "Gómez",
+      "email": "pedrog@email.com",
+      "password": "12345678",
+      "category": "Empleado",
+      "image": "imagen5.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Ana",
+      "lastName": "Rodríguez",
+      "email": "anar@email.com",
+      "password": "a1b2c3",
+      "category": "Cliente",
+      "image": "imagen6.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "Sofía",
+      "lastName": "Pérez",
+      "email": "sofiap@email.com",
+      "password": "segura2023",
+      "category": "Empleado",
+      "image": "imagen7.jpg"
+    },
+    {
+      "id": 8,
+      "firstName": "Diego",
+      "lastName": "Hernández",
+      "email": "diegoh@email.com",
+      "password": "miclave123",
+      "category": "Cliente",
+      "image": "imagen8.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Lucía",
+      "lastName": "Díaz",
+      "email": "luciad@email.com",
+      "password": "d1a2d3",
+      "category": "Empleado",
+      "image": "imagen9.jpg"
+    },
+    {
+      "id": 10,
+      "firstName": "Javier",
+      "lastName": "Ruíz",
+      "email": "javierr@email.com",
+      "password": "contraseñaSegura",
+      "category": "Cliente",
+      "image": "imagen10.jpg"
+    }
+  ]
+  

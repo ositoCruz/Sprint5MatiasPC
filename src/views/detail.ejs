@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include("partials/head")  %>
+<link rel="stylesheet" href="/css/detail.css">
+<body>
+    <%- include("partials/header") %>
+	<div class="container">
+        <!-- Contenedor del detalle del producto -->
+        <div class="articulo-item">
+            <h2 class="product-title">Detalle del producto: <%= product.name%></h2>
+
+            <div class="product-info">
+                <img src="/images/<%= product.image%>" alt="Imagen del producto <%= product.name%>" class="product-image" width="400px">
+                <p class="product-description">Descripción del producto.</p>
+            </div>
+
+            <h2 class="product-title"><%= product.name  %></h2>
+
+            <p class="product-price">
+                <span>$<%= product.precio %></span>
+                <b class="oferta"><%= product.descuento %>% OFF</b>
+            </p>
+
+            <p class="product-original-price">
+                Precio Final: $ <%= product.precio - (product.precio * product.descuento/100) %>
+            </p>
+
+            <a href="#" class="buttonDecoration primary">COMPRAR AHORA</a>
+			<br>
+			<div class="botones">
+                <a href="/products/<%=product.id %>/edit/" class="buttonDecoration secondary">EDITAR PRODUCTO</a>
+			
+                <form action="/products/<%=product.id%>?_method=DELETE" method="POST" style class="delete-form">
+                    <button type="submit" class="buttonDecoration secondary">ELIMINAR</button>
+                </form>
+		    </div>
+        </div>
+        <!-- /Contenedor del detalle del producto -->
+    </div>
+</body>	
+
+<!-- footer -->
+<%- include('partials/footer') %>
+<!-- /footer -->
+</html>
