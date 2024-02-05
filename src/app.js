@@ -27,14 +27,6 @@ app.use('/carritoDeCompras', routerMain);
 /***************MIDDLEWARES************ */
 app.set('views', path.join(__dirname, '/views'));
 
- //para poder pisar el method= "Post" en el formulario por put y delete
-
-
-
-
-
-
-
 app.set("view engine", "ejs");
 
 
@@ -42,6 +34,28 @@ app.set("view engine", "ejs");
 app.listen(PORT, ()=>{
     console.log(`Servidor andando en puerto: http://localhost:${PORT}`);
 });
+
+app.use((req, res, next)=>{
+    res.status(404).render("error404")
+    next();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
