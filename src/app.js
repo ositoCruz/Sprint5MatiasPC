@@ -4,6 +4,7 @@ const path= require("path");
 const methodOverride = require('method-override');
 const routerMain=require('./routers/main');
 const productsRouter = require('./routers/products');
+const usersRouter= require('./routers/users');  
 
 const PORT= process.env.PORT || 3001;
 
@@ -12,6 +13,8 @@ app.use(express.static(path.join('./public')));
 app.use(methodOverride('_method'));
 app.use (express.urlencoded ({extended: true }));
 app.use(express.json());
+
+app.use("/", usersRouter);
 /********************INDICE DE RUTEO*****************/
 app.use("/", routerMain);
 

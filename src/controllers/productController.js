@@ -58,7 +58,6 @@ const controller = {
 
 	// Update - Form to edit
 	edit: (req, res) => {		
-		console.log("llega a edit1")
 		res.render('edit', ({
 		productToEdit: productService.getOne(req.params.id)
 		}));

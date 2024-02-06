@@ -20,13 +20,9 @@ const controller = {
 		res.send("Estas buscando:" + req.query.keywords)
 	},
 
-	loginController: (req,res)=>{
-        res.render(("login"))
-    },
-
-    registerController: (req,res)=>{
-        res.render(("register"))
-    },
+    // registerController: (req,res)=>{
+    //     res.render(("./users/register"))
+    // },
 
     aboutController: (req,res)=>{
         res.render(("about"))
