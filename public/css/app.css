@@ -172,7 +172,18 @@ footer {
     color: #39b54a;
 }
 
+.form-validationError {
+    font-size: 11px;
+    display: block;
+    color: red;
+    border: 0px;
+    padding: 0%;
+}
 
+.input-error
+{
+border: 1px solid red;
+}
 /*----------------------------------------*/
 
 

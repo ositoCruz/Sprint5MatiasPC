@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include("../partials/head")  %>
+<link rel="stylesheet" href="/css/login.css">
+<body>
+    <%- include("../partials/header")  %>
+
+    <div class="login-container">
+        <form action="/users/<%=userToEdit.id%>?_method=PUT" method="POST" >
+            
+            <h2>Editando la cuenta de: <%=userToEdit.firstName  %></h2>
+            
+            <label for="firsName">Nombre:</label><br>
+            <input type="text" id="firsName" name="firsName" value="<%=userToEdit.firstName%>"><br>
+
+            <label for="lastName">Apellido:</label><br>
+            <input type="text" id="lastName" name="lastName" value="<%=userToEdit.lastName%>"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" value="<%= userToEdit.email%>"><br>
+
+            <button type="submit" class="buttonDecoration">Guardar Cambios</button>
+        </form>
+    </div>
+
+    <%- include("../partials/footer")  %>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('../partials/head.ejs') %>
+<link rel="stylesheet" href="/css/detail.css">
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+        <div class="articulo-item">
+        <section class="profile-detail">
+            <h1>Bienvenido, <%= user.firstName %> <%= user.lastName %></h1>
+
+            <h1>DATOS DEL USUARIO</h1>
+
+            <div class="product-page">
+                <h2>Nombre: <%= user.firstName %> <%= user.lastName %></h2>
+                
+                <h2>E-mail: <%= user.email %></h2>
+                <img src="/images/users/<%= user.image %>" alt="<%= user.firstName %>">
+
+                <div class="botones">
+                    <a href="/users/<%=user.id %>/edit/" class="buttonDecoration secondary">EDITAR DATOS</a>
+                
+                    <form action="/users/<%=user.id%>?_method=DELETE" method="POST" style class="delete-form">
+                        <button type="submit" class="buttonDecoration secondary">ELIMINAR</button>
+                    </form>
+            </div>
+            
+        </section>
+        </div>
+    </main>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    
+    <main>
+        <section class="productos">
+            <div class="div_title">
+                <h1>Lista de USUARIOS</h1>
+            </div>
+            <div class="div-products">
+                <table>
+                    <thead>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>email</th>
+                        <!-- <th>Stock</th> -->
+                        <th><th>Acciones</th></th>
+                    </thead>
+                    <tbody>
+                        <% users.forEach(user => { %>
+                            <tr>
+                                <td><img src="/images/users/<%= user.image %>" alt="<%= user.firstName %>" class="product-image"></td>
+                                <td><%= user.firstName %></td>
+                                <td><%= user.lastName %></td>
+                                <td> <%= user.email %></td>
+                                <td class="product_acciones">
+                                     <a href="users/profile/<%= user.id %>"><button class="productacc"><i class="fa-solid fa-circle-info"></i></button></a>
+                                    <a href="users/<%= user.id%>/edit?_method"><button class="productacc"><i class="fa-solid fa-square-pen"></i></button></a>
+                                    <form action="/users/<%=user.id%>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estás seguro de eliminar este usuario?');"> -->
+                                        <button class="productacc" type="submit" class="btn-delete-product"><i class="fa-solid fa-trash-can"></i></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>
